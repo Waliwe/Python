@@ -1,3 +1,4 @@
+
 import sys
 
 print("Lanchonete")
@@ -9,7 +10,7 @@ cardapio1.append(lanches)
 cardapio2 = []
 bebidas = {"coca lata": 3.50, "suco": 4.25}
 cardapio2.append(bebidas)
-
+1
 quantidade = []
 listSum = sum(quantidade)
 
