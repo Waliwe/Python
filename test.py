@@ -14,8 +14,8 @@ for item in numeros:
     
 while True:
     try:
-        pedido=str(input("Qual o seu pedido? ('coca', 'corote')"))
-        if pedido == 'coca':
+        pedido=str(input("Qual o seu pedido? ('lanche', 'refri')"))
+        if pedido == 'lanche':
             print("deu 5:30")
             break
             
