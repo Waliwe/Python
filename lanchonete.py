@@ -12,6 +12,9 @@ cardapio2 = []
 bebidas = {"suco": 4.25,"coca lata": 3.50}
 cardapio2.append(bebidas)
 
+produtos = []
+quantidade = []
+
 
 while True:
         
@@ -29,9 +32,16 @@ while True:
                 print(16*"-")
 
                 lanchep = str(input("Qual lanche voce quer ?: "))
+                produtos.append(lanchep)
                 if lanchep == "pastel":
                         y=int(input('qual a quantidade?'))
-                        print(f'Seu pedido foi {y} {lanchep} no valor de: {lanches["pastel"]*y}')
+                        quantidade.append(y)
+                        
+                        cont=str(input('Gostaria de continuar suas compras?: [S/N]')).upper()
+    
+                        if cont == 'N':
+                            print(f'Seu pedido foi {y} {lanchep} no valor de: {lanches["pastel"]*y}')
+        break
                         
                              
 
@@ -51,6 +61,5 @@ while True:
                 if bebidap == "suco":
                         y=int(input('qual a quantidade?'))
                         print(f'Seu pedido foi {y} {bebidap} no valor de: {bebidas["suco"]*y}')
-        break
-                             
+                        
 
