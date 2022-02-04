@@ -1,4 +1,4 @@
-##original
+##teste
 import sys
 
 print(20*"-"+ "Lanchonete" + 20*"-")
