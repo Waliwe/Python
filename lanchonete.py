@@ -9,14 +9,14 @@ lanches = {"pastel": 3.50, "coxinha": 4.50}
 cardapio1.append(lanches)
 
 cardapio2 = []
-bebidas = {"coca lata": 3.50, "suco": 4.25}
+bebidas = {"suco": 4.25,"coca lata": 3.50}
 cardapio2.append(bebidas)
 
 
 while True:
         
 
-        pedido = str(input("Qual o seu pedido?: Lanche ou Refri? ")) #Pedido
+        pedido = str(input("Qual o seu pedido?: Lanche ou bebida? ")) #Pedido
         if pedido == 'lanche':
 
             print("")
@@ -28,16 +28,18 @@ while True:
                     print(a + ": "+str(b))
                 print(16*"-")
 
-                lanchep = str(input("Qual lanche voce quer "))
+                lanchep = str(input("Qual lanche voce quer ?: "))
                 if lanchep == "pastel":
-                    print("Deu 3.50")
-                if lanchep == "coxinha":
-                    print("Deu 4.50") 
+                        y=int(input('qual a quantidade?'))
+                        print(f'Seu pedido foi {y} {lanchep} no valor de: {lanches["pastel"]*y}')
+                        
+                             
+
                     
-        if pedido == 'refri':
+        if pedido == 'bebida':
 
             print("")
-            print("Cardapio de lanches")
+            print("Cardapio de bebidas")
             print(16*"-")
             
             for bebida in cardapio2:
@@ -45,10 +47,10 @@ while True:
                     print(a + ": "+str(b))
                 print(16*"-")
 
-                bebidap = str(input("Qual bebida voce quer "))
+                bebidap = str(input("Qual bebida voce quer ?: "))
                 if bebidap == "suco":
-                    print("Deu 4.25")
-                if bebidap == "coca lata":
-                    print("Deu 3.50")
+                        y=int(input('qual a quantidade?'))
+                        print(f'Seu pedido foi {y} {bebidap} no valor de: {bebidas["suco"]*y}')
         break
+                             
 
