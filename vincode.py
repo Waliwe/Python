@@ -44,16 +44,6 @@ for c in range(len(carrinho)):
     print(quantidade[c],'X',carrinho[c],'|','VALOR UNITARIO R$',custo[c],'|','VALOR TOTAL DO PRODUTO R$',total[c])
     print('-'*50)
 
-print('\n')
 
-cadastro1=str(input('Possui cadastro conosco?:  [S/N] '))
-
-if cadastro1 == 'n':
-    print('-'*50)
-    cadastro2=str(input('Gostaria de se cadastrar?: [S/N]'))
-    if cadastro2 == 's':
-        cadastro()
-    print('\n')
-    print('-'*50,'CADASTRO FINALIZADO','-'*50)
     
 
