@@ -4,10 +4,10 @@ cadastrados=[]
 
 produtos = ['Monitor','Teclado','Mouse','Gabinete','Placa Mae','Processador','Memória','HD1TB','HD500GB','SSD500GB','Alto Falantes','Placa De Video','Ice Cooler']
 valor = [150,30,20,180,300,250,260,450,400,480,100,600,1000]
-quantidade=[]
-carrinho=[]
-custo=[]
-total=[]
+quantidade=[] ##qauntidade
+carrinho=[] ##produtos
+custo=[] ## preco dos produtos
+total=[] ## preço x quantidade
 
 print('='*20,'LOJA DE PRODUTOS ELETRONICOS','='*20)
 print('\n')
@@ -27,6 +27,7 @@ while True:
     print('-'*30)
     preco=int(input('Qual o valor do produto?:'))
     custo.append(preco)
+
     pagar=preco * quant
     total.append(pagar)
     pagar_total=sum(total)
@@ -47,3 +48,10 @@ for c in range(len(carrinho)):
 
     
 
+
+
+
+pagar = {cardapio[pedido] * quan}
+    multi.append(pagar)
+    
+    valor=sum(pagar)

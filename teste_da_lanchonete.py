@@ -1,5 +1,3 @@
-import sys
-
 
 escolha=[]
 cardapio = {"coca": 4, "pastel": 6}
@@ -12,7 +10,7 @@ multi=[] ##valor do produto vezes a quantidade
 
 print("-"*20,"LANCHONETE","-"*20)
 print('')
-print("-"*20,"CARDAPIO","-"*20)
+print("-"*20,"CARDAPIO",20*"-")
 print('')
 for cardapio in escolha:
     for a, b in cardapio.items():
@@ -26,6 +24,11 @@ while True:
     quantidade.append(quan)
     print('-'*30)
 
+    pagar = {cardapio[pedido] * quan}
+    multi.append(pagar)
+    
+    valor=sum(pagar)
+    
     s_n=str(input('Deseja comprar algo mais?: [s|n]'))
     print(' ')
     if s_n == 'n':

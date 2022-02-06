@@ -53,3 +53,5 @@ print('')
 person1.pop("nome") ## remove uma chave(item) do dicionario ('.popitem()' remove a ultima chave adicionada)
 
 print(person1.keys())
+
+
