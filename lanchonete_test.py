@@ -39,10 +39,12 @@ while True:
         multi.append(pagar)
         final=sum(multi)
 
-        s_n=str(input('Deseja comprar algo mais?: [s|n]'))
+       
+        s_n=str(input('Deseja comprar algo mais?: [s|n]')).upper
         print(' ')
-        if s_n == 'n':
-            break
+        if s_n == 'n' or 'nao':
+                break
+            
     except:
         print("Opa meu amigo, essa não é a resposta correta, tente novamente:")
 print(' ')
