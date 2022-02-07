@@ -36,5 +36,5 @@ print('Sua lista: ')
 print('')
 
 for x in range(len(itens)):
-    print("Voce comprou",quantidade[x],'itens do produto: (',itens[x], ') no valor de:')
+    print("Voce comprou",quantidade[x],'itens do produto: (',itens[x], ') no valor de: ')
     
