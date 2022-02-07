@@ -31,9 +31,6 @@ while True:
     multi.append(pagar)
     final=sum(multi)
 
-    print(final)
-
-
     s_n=str(input('Deseja comprar algo mais?: [s|n]'))
     print(' ')
     if s_n == 'n':
@@ -44,11 +41,11 @@ print('Sua lista: ')
 print('')
 
 for x in range(len(itens)):
-    print("Voce comprou",quantidade[x],'itens do produto: (',itens[x], ') no valor de:', multi)
+    print("Voce comprou",quantidade[x],'itens do produto: (',itens[x], ') no valor de:', multi[x])
+print("Valor total:",sum(multi))
     
 
- 
- 
+
  
  
  
